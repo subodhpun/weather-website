@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    background-image: url('background3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures the body takes up full viewport height */
+}
+
+.appname{
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    text-decoration: underline;
+}
+
+.card{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 340px;
+    background: rgba(255, 255, 255, 0.3);
+    background: linear-gradient(0deg , rgba(60,92,139,0.8) 20%, rgba(34,193,195,0.8) 75%);
+    color:#fff;
+    margin: 0px auto 0;
+    padding: 20px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#cityNameInput{
+    height: 25px;
+    justify-content: center;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: white;
+    color: #555;
+    padding: 5px 5px;
+    border-radius: 10px;
+    flex: 1;
+    height: 30px;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border:0;
+    outline:0;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+}
+
+.search button img{
+    width: 30px;
+    margin-top: 10%;
+    margin-left: 6%;
+    border: rgb(25, 25, 25);
+    transition: transform 0.2s ease;
+    transition-duration: 0.2s;
+
+}
+
+.search button:hover{
+    transform: scale(1.08);
+}
+
+
+
+img:active{
+    background-color: #434141; /* Darker Green */
+    opacity: 40%;
+    transform: translateY(1px); /* Move the button down by 2 pixels */
+    border:10px;
+    border-radius: 50px;
+  }
+
+  .weatherIcon{
+    height: 50%;
+    width: 50%;
+  }
+
+.details{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 25px;
+}
+
+.col1{
+    font-size: 20px;
+}
+
+.col2{
+    font-size: 20px;
+}
+
+
+.humidityIcon{
+    height: 60%;
+    width: 40%;
+}
+
+.windIcon{
+    height: 60%;
+    width: 80%;
+}
+
+@media screen and (max-width: 600px)
+{
+    body {
+        background: #222;
+        background-image: url('background3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        backdrop-filter: blur(3px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ensures the body takes up full viewport height */
+    }
+
+    .appname{
+        display: flex;
+        justify-content: center;
+        margin-top: -35px;
+        text-decoration: underline;
+        font-size: 25px;
+    }
+    
+
+    .card{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 380px;
+        max-height: 100vh;
+        height: 60%;
+        background: rgba(255, 255, 255, 0.3);
+        background: linear-gradient(0deg , rgba(60,92,139,0.8) 20%, rgba(34,193,195,0.8) 75%);
+        color:#fff;
+        margin: 0px auto 0;
+        padding: 20px;
+        border-radius: 20px;
+        padding: 40px 35px;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    #cityNameInput{
+        height: 35px;
+        justify-content: center;
+        margin-left: 16px;
+    }
+    
+    .search button{
+        border:0;
+        outline:0;
+        width: 60px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition-duration: 0.2s;
+    }
+
+    .search button:hover{
+        transform: scale(1.08);
+    }
+
+    .details{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .weatherIcon{
+        margin-top: 30px;
+        height: 50%;
+        width: 50%;
+      }
+
+      .humidityIcon{
+        height: 40%;
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .humidity{
+        margin-top: -30px;
+    }
+    
+    .windIcon{
+        height: 90%;
+        width: 90%;
+    }
+
+}
